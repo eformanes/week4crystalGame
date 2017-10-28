@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>
+		<h1>Crystal Collector!</h1>
+	</div>
+	<div>
+		<h2>
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</h2>
+	</div>
+	<div>
+		<div>
+			<h2>Wins: <span id="winsDisplay"></span></h2>
+		</div>
+		<div>
+			<h2>Losses: <span id="lossesDisplay"></span></h2>
+		</div>
+	</div>
+	<!-- crystal numbers -->
+	<div id="numbers">
+		<div>
+			<h2> Target: <span id="secretNumber"></span></h2>
+		</div>
+		<div>
+			<p>Your total score is:</p>
+			<h2 id="counter">0</h2>
+		</div>
+		
+	</div>
+
+	<!--  crystal images -->
+	<!-- <div class="crystal">
+		<div id="crystal1">C1
+			<img src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		</div>
+		<div id="crystal2">C2
+			<img src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		</div>
+		<div id="crystal3">C3
+			<img src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		</div>
+		<div id="crystal4">C4
+			<img src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		</div>
+	</div> -->
+	
+	<div class="crystal">
+		<img id="crystal1" src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		<img id="crystal2" src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		<img id="crystal3" src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+		<img id="crystal4" src="http://www.metalbot.org/metalbot-wiki/images/b/ba/Titanium_Crystal.png" height="200" width="200">
+	</div>
+
+
+	<script type="text/javascript" src="Assets/Javascript/gameLogic.js"></script>
+</body>
+</html>
